@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/sobre.css' %}">
+    <title>Sobre nós </title>
+{% endblock %}
+
+{% block content %}
+
+<h1 class="titulo"><strong>Conhecendo um pouco sobre nós ...</strong></h1>
+    <div class="main">
+        <h4 class="titulo_secao">O que é a CarinaSpace?!</h4>
+            <div class="text_sobre">
+                <p>CarinaSpace? O que seria isso? De onde surgiu esse nome? </p>
+                <p>Bem, o CarinaSpace surgiu de uma ideia vinda de admiradores, o nome "Carina" vem em homenagem
+                a nebulosa Carina, 'um dos berçarios de estrelas' e Space, da lingua inglesa que em
+                portugues siginifica espaço.
+
+                <div class="mapa">
+                    
+                </div>
+            </div>
+            <div class="text_sobre">
+                <h4 class="titulo_secao">Artigo dos Desenvolvedores</h4>
+                <p>Este foi um projeto desenvolvido inteiramente
+                por alunos do Instrituto Federal de Educação, Ciencias e Tecnologia
+                da Paraíba - Campus Cajazeiras, com a finalidade de fins acadêmicos.
+                Inpirados por acontecimentos recentemente divulgados pela Nasa na época(a
+                representação gráfica da nebulosa Carina... tirada pelo telescópio
+                espacial James Webb), desenvolveram este website, instruidos por sua  
+                professora Edilva Carvalho, na aula de Desenvolvimento e Informática Aplicada a Web
+                ministradas pela mesma.</p>
+                <div style="text-align: center;">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.007975377568!2d-38.54704568568331!3d-6.889647169332192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a473a32378c727%3A0x4e45e65b60da5295!2sIFPB%20-%20Campus%20Cajazeiras!5e0!3m2!1spt-BR!2sbr!4v1661299009923!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>IFPB - Campus Cajazeiras</p>
+                </div>
+
+            <p>"No fim do 1º semestre, vimos uma oportunidade de pormos em pratica o aprendemos durante
+                nossa jornada acadêmica, como nós, os integrantes da equipe, temos um gosto especifico
+                por mistérios da galáxia em que vivemos, decidimos abordar essa tematica no projeto,
+                este é apenas uma prévia dos imensos mistérios e deslunbres de nosso magnifico universo!"
+                
+            </p>
+        </div>
+</div>
+ 
+<div>
+    <h4 class="titulo_secao">Desenvolvedores</h4>
+    <p class="info"><strong> José Gabriel Abreu Moreira </strong> ----- Desonvolvedor Fullstack</p>
+    <p class="info"><strong> José Anderson Ferraz de Arruda </strong> ----- Desenvolvedor Front-end</p>
+    <p class="info"><strong> Luiz Fernado Pereira do Nascimento </strong> ----- Desenvolvedor Fullstack</p>
+    <p class="info"><strong> Mateus Queiroz Nascimento </strong> ----- Desenvolvedor Front-end</p>
+</div>
+<div>
+    <h4 class="titulo_secao">Tecnologias utilizadas</h4>
+    <div class="apps">
+        <p>Django, BootStrap, Git, Github, HTML, CSS e JS</p>
+    </div>
+</div>
+
+{% endblock %}

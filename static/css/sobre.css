@@ -1,0 +1,18 @@
+.main {
+    border-left: 50px;
+    border-right: 40px;
+}
+ 
+.titulo, .subtitulo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.titulo_secao {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+.info, .apps {
+    font-size: 1em;
+    text-indent: 2em;
+}

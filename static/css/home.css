@@ -1,0 +1,31 @@
+/* img.img-fluid {
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    margin-right: 10%;
+} */
+
+.topics img {
+    transition: 0.5s;
+    transform: 0.5s;
+}
+
+.topics img:hover {
+    height: 250px;
+    width: 405px;
+    box-shadow: -1px -1px 41px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px -1px 41px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 41px 0px rgba(0,0,0,0.75);
+}
+
+.imagem-do-dia {
+    display: flex;
+    justify-content: center;
+}
+
+/* .videos {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+} */

@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <title>Home</title>  
+{% endblock %}
+
+{% block content %}
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"> O QUE HÁ DE MELHOR NO UNIVERSO</h2>
+    <section>
+
+        <div id="buracosNegros" class="topics row mt-5 text-start align-items-center">
+            <div class="col-lg-6 ms-auto">
+                <img height="250px" width="400" src="{% static 'img/black-hole.jpeg '%}" alt="Buraco negro">
+            </div>
+            <div class="col-lg-6 me-auto mt-2">
+                <h3>Buracos Negros</h3>
+                <p class="lead">
+                    Um buraco negro é um local no espaço onde ondas gravitacionais são tão fortes que nem mesmo a luz consegue escapar. A gravidade é tão forte devido a densidade desses locais, pois a matéria desses fora espremida em um espaço minúsculo. Isso pode acontecer quando ocorre a morte de uma estrela. 
+                </p>
+            </div>       
+            
+        </div>
+
+        <div id="galaxias" style="opacity: 1;" class="topics row mt-5 text-end align-items-center flex-row-reverse">
+            <div class="col-lg-6 ms-auto">
+                <img height="250px" width="400" src="{% static 'img/Galaxys.jpeg '%}" alt="Galáxias">
+            </div>
+            <div class="col-lg-6 me-auto mt-2">
+                <h3>Galáxias</h3>
+                <p class="lead">
+                    Uma galáxia é uma enorme coleção de gás, poeira, bilhões de estrelas e seus sistemas solares. Essas são mantidas unidas pela gravidade. Nossa galáxia, a Via Láctea, também tem um buraco negro supermassivo no meio.
+                </p>
+            </div>       
+            
+        </div>
+
+        <div style="opacity: 1;" id="nebulosas" class="topics row mt-5 text-start align-items-center">
+            <div class="col-lg-6 ms-auto">
+                <img height="250px" width="400" src="{% static 'img/Carina.jpg'%}" alt="nebulosas">
+            </div>
+            <div class="col-lg-6 me-auto mt-2">
+                <h3>Nebulosas</h3>
+                <p class="lead">
+                    Uma nebulosa é uma nuvem gigante de poeira e gás no espaço. Algumas nebulosas (mais de uma nebulosa) vêm do gás e da poeira lançados pela explosão de uma supernova. Outras nebulosas são regiões onde novas estrelas estão começando a se formar.
+                </p>
+            </div>       
+            
+        </div>
+
+        <div style="opacity: 1;" id="estrelas" class="topics row mt-5 text-end align-items-center flex-row-reverse">
+            <div class="col-lg-6 ms-auto">
+                <img height="250px" width="400" src="{% static 'img/sun.jpeg '%}" alt="Estrelas">
+            </div>
+            <div class="col-lg-6 me-auto mt-2">
+                <h3>Estrelas</h3>
+                <p class="lead">
+                    Uma estrela é uma esfera de gás mantida unida por sua própria gravidade. A estrela mais próxima da Terra é o nosso próprio Sol, por isso temos um exemplo próximo que os astrônomos podem estudar em detalhes. As lições que aprendemos sobre nossa estrela podem ser aplicadas a outras estrelas.
+                </p>
+            </div>       
+            
+        </div>
+    </section>
+
+    <h2 style="margin-top: 5%;" class="page-section-heading text-center text-uppercase text-secondary mb-0"> IMAGEM DO DIA</h2>
+    <section class="imagem-do-dia">
+
+        <figure class="figure">
+            <img style="max-height: 660px;" src="{{ dados.url }}" class="figure-img img-fluid rounded" alt="imagem do dia espacial">
+            <figcaption class="figure-caption">{{ dados.titulo }}</figcaption>
+        </figure>
+    </section>
+
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"> UNIVERSO EM MP4 </h2>
+    <section>
+        <div style="margin-top: 20px; display: flex; justify-content: space-between;" class="videos">
+
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/ZSt9tm3RoUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/uD4izuDMUQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+{% endblock %}

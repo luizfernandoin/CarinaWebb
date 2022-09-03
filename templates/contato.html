@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/contato.css' %}">
+
+{% endblock %}
+
+{% block content %}
+<h1>Fale Conosco</h1><br>
+<div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Ex.: xxxxxxx@gmail.com">
+</div>
+
+<div class="mb-3">
+    <label for="Nome" class="form-label">Nome:</label>
+    <input type="text" size="40" id="Nome" class="form-control" placeholder="Digite seu nome!">
+</div>
+<div class="mb-3">
+    <label for="telefone" class="form-label">Telefone</label>
+    <input type="text" id="telefone" class="form-control" placeholder="(XX) 9XXXX-XXXX">
+</div>
+
+<div class="mb-3">
+    <label for="Mensagem" class="form-label">Mensagem</label>
+    <textarea class="form-control" id="Mensagem" rows="3"></textarea>
+</div>
+<label for="sexo">Sexo:</label> &nbsp
+<label for="masc">Mascuino</label>
+<input type="radio" name="opção" id="op1">
+<label for="fem">Feminino</label>
+<input type="radio" name="opção" id="op1">
+<label for="Outros">Outros</label>
+<input type="radio" name="opção" id="op1"><br><br>
+<label for="UF">Estado:</label>
+<select name="Estado" id="UF">
+    <option value="0">Escolha Sua Região</option>
+    <optgroup label="Norte">
+        <option value="AC">Acre</option>
+        <option value="AM">Amazonas</option>
+        <option value="AP">Amapá</option>
+        <option value="PA">Pará</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="TO">Tocantis</option>
+    </optgroup>
+
+    <optgroup label="Nordeste">
+        <option value="AL">Alagoas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="MA">Maranhão</option>
+        <option value="PI">Piaui</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PB">Paraiba</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="SE">Sergipe</option>
+    </optgroup>
+
+
+    <optgroup label="Centro-Oeste">
+        <option value="GO">Goiás</option>
+        <option value="MO">Mato Grosso</option>
+        <option value="MS">Mato Grosso Do Sul</option>
+        <option value="DF">Distrito Federal</option>
+    </optgroup>
+
+    <optgroup label="Sudeste">
+
+
+        <option value="ES">Espirito Santo</option>
+        <option value="MG">Minais Gerais</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+    </optgroup>
+    <optgroup label="Sul">
+        <option value="PR">Paraná</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="SC">Santa Catarina</option>
+    </optgroup>
+</select>
+
+
+<div style="text-align: center;">
+    <input type="Submit" value="Enviar"> &nbsp; &nbsp;
+    <input type="Button" value="Voltar">
+</div>
+{% endblock %}
