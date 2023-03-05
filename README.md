@@ -1,4 +1,4 @@
-<h1 align="center">InCine com Flask</h1>
+<h1 align="center">CarinaWeb</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.1.1-blue.svg?cacheSeconds=2592000" />
   <a href="LICENSE" target="_blank">
@@ -8,7 +8,7 @@
 
 ### 🏠 [Homepage](https://github.com/luizfernandoin/CinemaFlask)
 
-###  Aplicação para listagem de filmes.
+###  Aplicação sobre Astronomia.
 <img src="https://github.com/luizfernandoin/CarinaWebb/blob/main/static/img/carina1.jpeg" height="400px" width="700px"/>
 
 ### Descrição
